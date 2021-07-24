@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="En">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>What people say</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+      <section>
+        <nav>
+			<div class="nav__logo">
+				<img src="images/logo.png">
+				<a href="index.html"><h2>J.P.Club</h2></a>
+			</div>
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT US</a></li>
+                <li><a href="reviews.html">REVIEWS</a></li>
+                <li><a href="gallery1.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+		</section>
+	 <!--testimonial-->
+	 <section class="testimonial">
+		<h1>What People Say</h1>
+		<div class="row">
+		  <div class="col-3">
+			<img src="images/ben.jpg">
+			<h3>Morapeli Mohobela</h3>
+			<i class="fa fa-quote-left"></i>
+			<p>The quality of the learning is really great<br>and professional, I'm looking forward to learning more concepts<br>
+			The help is good. </p>
+			<div class="rating">
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star-o"></i>
+			</div>
+		  </div>
+		  <div class="col-3">
+			<img src="images/office2.jpg">
+			<h3>Suzan Peter</h3>
+			<i class="fa fa-quote-left"></i>
+			<p>This was the first I joined the photography club so<br> will be looking forward to sharing all the knowledge with members<br>
+			  It is such amazing experience learning here.
+			</p>
+			<div class="rating">
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star"></i>
+		  <i class="fa fa-star-o"></i>
+			</div>
+		</div>
+		<div class="col-3">
+			  <img src="images/faal.jpg">
+			<h3>kim Bash</h3>
+			<i class="fa fa-quote-left"></i>
+			<p>The club has helped improve my skills I have been<br> enjoying my learning<br> since I started.</p>
+			<div class="rating">
+			  <i class="fa fa-star"></i>
+			  <i class="fa fa-star"></i>
+			  <i class="fa fa-star"></i>
+			  <i class="fa fa-star"></i>
+			  <i class="fa fa-star-o"></i>
+			</div>
+				</div>
+			</div>
+		</section>
+ <!--footer-->
+ <div class="footer-container">
+	<div class="footer">
+		<div class="footer-heading bcol-3">
+		  <h2>Menu</h2>
+		  <a href="about.html"> About Us</a>
+		  <a href="about.html"> Course</a>
+		  <a href="about.html"> Pricing</a>
+		  <a href="contact1.html"> Contacts Us</a>
+	  </div>
+	  <div class="footer-heading bcol-4">
+		<h2>Contact Us</h2>
+		<a href="contact1.html"> Support</a>
+		<a href="contact1.html"> Contact</a>
+		<a href="about.html"> Sponsorships</a>
+		</div>	
+		<div class="footer-heading bcol-5">
+		  <h2>Social Media</h2>
+		  <a href="https://www.instagram.com/accounts/login/"><i class="fa fa-instagram"></i> Instagram</a>
+		  <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i> Facebook</a>
+		  <a href="https://www.linkedin.com/login"><i class="fa fa-linkedin"></i> Linkedin</a>
+		 <a href="https://twitter.com/LOGIN"><i class="fa fa-twitter"></i> Twitter</a>
+
+		</div>
+		<div class="footer-email-form">
+		  <h2>Join our newsletter</h2>
+		  <input type="email" placeholder="Enter your email address" id="footer-email">
+		  <input type="submit" value="Sign up" id="footer-email-btn">
+		</div>
+		</div>
+	</div>
+
+
+
+
+	<!---JavaScript-->
+	<script>
+	  var navLinks = document.getElementById("navLinks")
+
+	  function showMenu(){
+		navLinks.style.right = "0";
+	  }
+	  function hideMenu(){
+		navLinks.style.right = "-200px";
+	  }
+	</script>
+</body>
+</html>

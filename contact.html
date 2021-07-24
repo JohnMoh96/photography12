@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="En">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact US</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+      <section>
+        <nav>
+          <img src="images/logo.png" width="4%" height="4%"><a href="index.html"><h2>J.P.Club</h2></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="reviews.html">REVIEWS</a></li>
+                <li><a href="gallery1.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+		</section>
+	<!--Contact us form-->
+	<section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>How can we help you?</p>
+        </div>
+        <div class="container9">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h4>Address</h4>
+                        <p>Aman Park<br>
+                            Ludiana, India</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h4>Phone</h4>
+                        <p>+91 98123456</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"> <i class="fa fa-envelope fa-2x" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h4>Email</h4>
+                        <p>john@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="contactForm2">
+                <form action="details_entry.php" method="post">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="full_name" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="mytextarea" required="required"></textarea>
+                        <span>Type your Message</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="save" value="Send">
+                </form>
+            </div>
+        </div>
+
+    </section>
+        <!--footer-->
+    <div class="footer-container">
+		<div class="footer">
+			<div class="footer-heading bcol-3">
+			  <h2>Menu</h2>
+			  <a href="about.html"> About Us</a>
+              <a href="about.html"> Course</a>
+              <a href="about.html"> Pricing</a>
+              <a href="contact1.html"> Contacts Us</a>
+          </div>
+          <div class="footer-heading bcol-4">
+            <h2>Contact Us</h2>
+            <a href="contact1.html"> Support</a>
+            <a href="contact1.html"> Contact</a>
+            <a href="about.html"> Sponsorships</a>
+			</div>	
+			<div class="footer-heading bcol-5">
+			  <h2>Social Media</h2>
+			  <a href="https://www.instagram.com/accounts/login/"><i class="fa fa-instagram"></i> Instagram</a>
+			  <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i> Facebook</a>
+			  <a href="https://www.linkedin.com/login"><i class="fa fa-linkedin"></i> Linkedin</a>
+			 <a href="https://twitter.com/LOGIN"><i class="fa fa-twitter"></i> Twitter</a>
+  
+			</div>
+			<div class="footer-email-form">
+			  <h2>Join our newsletter</h2>
+			  <input type="email" placeholder="Enter your email address" id="footer-email">
+			  <input type="submit" value="Sign up" id="footer-email-btn">
+			</div>
+			</div>
+		</div>
+  
+
+ 
+      <!--JavaScript for Toggle Menu-->
+      <script>
+      	var menubar = document.getElementById("menubar");
+
+      	function showMenu(){
+      		menubar.style.right = "0";
+      	}
+      	function hideMenu(){
+      		menubar.style.right = "-200px";
+      	}
+
+      </script>
+</body>
+</html>
